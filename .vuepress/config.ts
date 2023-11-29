@@ -6,6 +6,7 @@ import series from './series'
 import friendshipLinks from './link'
 
 export default defineUserConfig({
+  base: '/vuepress-blog-reco/',
   title: '足各路的博客',
   description: '足各路的博客,专注前端开发,记录学习生活中的点滴。',
   theme: recoTheme({
