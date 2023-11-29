@@ -1,0 +1,17 @@
+{
+  "name": "zugelu-vuepress-theme-reco",
+  "version": "2.0.0",
+  "description": "zugelu blog",
+  "repository": "",
+  "author": "zugelu",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "start": "vuepress dev .",
+    "build": "vuepress build ."
+  },
+  "dependencies": {
+    "vuepress": "2.0.0-beta.66",
+    "vuepress-theme-reco": "2.0.0-beta.67"
+  }
+}
