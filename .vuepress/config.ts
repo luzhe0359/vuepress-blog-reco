@@ -1,12 +1,13 @@
 import { defineUserConfig } from 'vuepress'
 import type { DefaultThemeOptions } from 'vuepress'
-import recoTheme from 'vuepress-theme-reco'
+import { recoTheme } from 'vuepress-theme-reco'
 import navbar from './navbar'
 import series from './series'
+import bulletin from './bulletin'
 import friendshipLinks from './link'
 
 export default defineUserConfig({
-  base: '/vuepress-blog-reco/',
+  // base: '/vuepress-blog-reco/',
   title: '足各路的博客',
   description: '足各路的博客,专注前端开发,记录学习生活中的点滴。',
   theme: recoTheme({
@@ -21,40 +22,27 @@ export default defineUserConfig({
     catalogTitle: '目录',
     series, // 侧边栏，原 sidebar
     navbar, // 导航栏
-    bulletin: {
-      body: [
-        {
-          type: 'text',
-          content: `🎉🎉🎉 reco 主题 2.x 已经接近 Beta 版本，在发布 Latest 版本之前不会再有大的更新，大家可以尽情尝鲜了，并且希望大家在 QQ 群和 GitHub 踊跃反馈使用体验，我会在第一时间响应。`,
-          style: 'font-size: 12px;'
-        },
-        {
-          type: 'hr'
-        },
-        {
-          type: 'title',
-          content: 'GitHub'
-        },
-        {
-          type: 'text',
-          content: `
-          <ul>
-            <li><a href="https://github.com/vuepress-reco/vuepress-theme-reco-next/issues">Issues<a/></li>
-            <li><a href="https://github.com/vuepress-reco/vuepress-theme-reco-next/discussions/1">Discussions<a/></li>
-          </ul>`,
-          style: 'font-size: 12px;'
-        }
-      ]
-    },
+    bulletin, // 公告
+    // 评论
     commentConfig: {
-      type: 'Waline',
+      type: 'waline',
       options: {
-        serverURL: 'https://vuepress-blog-comment.vercel.app',
-        placeholder: '填写邮箱可以收到回复提醒哦！',
-        verify: true // 验证码服务
-        // hideComments: true // 隐藏评论
+        appId: 'JFI5xT9u451pAZ0hOPOHQKog-MdYXbMMI', // your appId
+        appKey: 'qxsn1YfUmsHiBicbtudHWkRb', // your appKey
+        lang: 'zh-CN', // 设置语言
+        pageview: true, // 浏览量统计
+        comment: true // 评论数统计
       }
     },
+    // 搜索
+    // algolia: {
+    //   appId: 'xxx',
+    //   apiKey: 'xxx',
+    //   indexName: 'xxx',
+    //   inputSelector: '### REPLACE ME ####',
+    //   algoliaOptions: { facetFilters: ['lang:$LANG'] },
+    //   debug: false // Set debug to true if you want to inspect the dropdown
+    // },
     friendshipLinks
   })
 })

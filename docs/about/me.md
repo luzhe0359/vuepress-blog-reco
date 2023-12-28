@@ -6,6 +6,7 @@ icon: interact
 article: false
 pageview: false
 breadcrumb: false
+hideComments: true
 description: 关于我自己的一些情况
 ---
 
@@ -24,4 +25,4 @@ description: 关于我自己的一些情况
 
 ### 本站
 
-- [关于本站](/docs/about/site)
+- [关于本站](/vuepress-blog-reco/docs/about/site)

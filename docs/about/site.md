@@ -5,6 +5,7 @@ sidebar: false
 article: false
 pageview: false
 breadcrumb: false
+hideComments: true
 description: 关于本站的一些情况
 collapsible: true // 默认展开，true 为折叠
 ---
@@ -24,4 +25,4 @@ collapsible: true // 默认展开，true 为折叠
 
 ### 关于我
 
-- [关于我](/docs/about/me)
+- [关于我](/vuepress-blog-reco/docs/about/me)

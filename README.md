@@ -1,5 +1,6 @@
 ---
 home: true
+hideComments: true
 modules:
   - BannerBrand
   - Blog
@@ -11,7 +12,7 @@ bannerBrand:
   description:
   tagline: 生活 - 无非是见招拆招 </>
   buttons:
-    - { text: 关于我, link: '/docs/about/me', type: 'plain' }
+    - { text: 关于我, link: '/vuepress-blog-reco/docs/about/me', type: 'plain' }
   # socialLinks:
   # - {
   #     icon: 'LogoGithub',

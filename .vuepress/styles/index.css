@@ -1,0 +1,6 @@
+/* 隐藏文案 Powered by Waline */
+.reco-waline-wrapper {
+  .wl-power {
+    display: none;
+  }
+}
