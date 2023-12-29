@@ -28,7 +28,7 @@ actionLink: /views/other/about
 footer: # 底部模块的配置
   record: 晋ICP备2021010367号
   recordLink: https://beian.miit.gov.cn/
-  cyberSecurityRecord: 公安备案文案
-  cyberSecurityLink: 公安备案地址
-  startYear: 2021
+  # cyberSecurityRecord: 公安备案文案
+  # cyberSecurityLink: 公安备案地址
+  # startYear: 2021
 ---

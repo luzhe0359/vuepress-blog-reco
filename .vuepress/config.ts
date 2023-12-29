@@ -18,8 +18,9 @@ export default defineUserConfig({
     authorAvatar: '/logo.png',
     docsRepo: 'https://github.com/vuepress-reco/vuepress-theme-reco-next',
     docsBranch: 'main',
-    // lastUpdatedText: '',
+    // editLink: false, // 是否启用 编辑此页 链接
     catalogTitle: '目录',
+    lastUpdatedText: '最后更新时间',
     series, // 侧边栏，原 sidebar
     navbar, // 导航栏
     bulletin, // 公告
@@ -27,6 +28,7 @@ export default defineUserConfig({
     commentConfig: {
       type: 'waline',
       options: {
+        serverURL: 'https://reco.zugelu.com', // your serverURL
         appId: 'JFI5xT9u451pAZ0hOPOHQKog-MdYXbMMI', // your appId
         appKey: 'qxsn1YfUmsHiBicbtudHWkRb', // your appKey
         lang: 'zh-CN', // 设置语言
